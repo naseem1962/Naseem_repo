@@ -15,7 +15,7 @@ export default function EmploymentSection({ employmentHistory }: EmploymentSecti
       
       <div className="space-y-6">
         {employmentHistory.map((job, index) => (
-          <div key={job.id} className="border-l-4 pl-6 pb-6" style={{ borderColor: 'var(--resume-primary)' }}>
+          <div key={job.id + index} className="border-l-4 pl-6 pb-6" style={{ borderColor: 'var(--resume-primary)' }}>
             <div className="mb-4">
               <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2">
                 <h3 className="text-xl font-bold" style={{ color: 'var(--resume-text-primary)' }}>
